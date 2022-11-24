@@ -10,7 +10,7 @@ class CustomSnackBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomButton(
-      btnText: "Trigger Snackbar",
+      btnText: "Snackbar",
       press: () {
         Get.snackbar(
           "GetX SnackBar", "This is a Snackbar from getX",
@@ -66,12 +66,12 @@ class CustomSnackBar extends StatelessWidget {
             print("Snackbar Clicked");
           },
           overlayBlur: 3,
-          // overlayColor: Colors.grey,
+          overlayColor: Colors.grey,
           // padding: const EdgeInsets.all(30),
           showProgressIndicator: true,
           progressIndicatorBackgroundColor: Colors.deepOrange,
           progressIndicatorValueColor: const AlwaysStoppedAnimation<Color>(Colors.white),
-          // reverseAnimationCurve: Curves.bounceOut,
+          reverseAnimationCurve: Curves.bounceOut,
           snackbarStatus: (status) {
             print(status);
           },
