@@ -11,7 +11,7 @@ class BottomSheetDynamicTheme extends StatelessWidget {
       btnText: "Bottom Sheet & Dynamic Theme",
       press: () {
         Get.bottomSheet(
-          Container(
+          SizedBox(
             height: context.height / 2,
             width: context.width,
             // color: Color.fromARGB(255, 212, 177, 0),

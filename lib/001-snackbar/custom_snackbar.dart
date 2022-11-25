@@ -54,17 +54,13 @@ class CustomSnackBar extends StatelessWidget {
           shouldIconPulse: true,
           // leftBarIndicatorColor: Colors.white,
           mainButton: TextButton(
-            onPressed: () {
-              print("Retry button pressed");
-            },
+            onPressed: () {},
             style: TextButton.styleFrom(
               backgroundColor: Colors.white,
             ),
             child: const Text("Retry"),
           ),
-          onTap: (_) {
-            print("Snackbar Clicked");
-          },
+          onTap: (_) {},
           overlayBlur: 3,
           overlayColor: Colors.grey,
           // padding: const EdgeInsets.all(30),
@@ -72,9 +68,7 @@ class CustomSnackBar extends StatelessWidget {
           progressIndicatorBackgroundColor: Colors.deepOrange,
           progressIndicatorValueColor: const AlwaysStoppedAnimation<Color>(Colors.white),
           reverseAnimationCurve: Curves.bounceOut,
-          snackbarStatus: (status) {
-            print(status);
-          },
+          snackbarStatus: (status) {},
           // userInputForm: Form(
           //   child: Row(
           //     children: const [
