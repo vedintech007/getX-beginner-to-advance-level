@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mastering_getx/004-route-navigation/pages/page1.dart';
-import 'package:mastering_getx/004-route-navigation/pages/page2.dart';
 import 'package:mastering_getx/components/custom_button.dart';
 
 class RouteNavigation extends StatelessWidget {
@@ -29,7 +28,7 @@ class RouteNavigation extends StatelessWidget {
 
         /* Go to next screen with some data */
         Get.to(
-          () => Page1(),
+          () => const Page1(),
           arguments: "// VED // ",
         );
       },

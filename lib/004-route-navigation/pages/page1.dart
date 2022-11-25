@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mastering_getx/004-route-navigation/pages/page2.dart';
@@ -24,7 +25,9 @@ class Page1 extends StatelessWidget {
           CustomButton(
             press: () async {
               var data = await Get.to(() => const Page2());
-              print("Data reveted is $data");
+              if (kDebugMode) {
+                print("Data reveted is $data");
+              }
             },
             btnText: "Next Page",
             btnColor: Colors.green,
@@ -40,7 +43,7 @@ class Page1 extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: Text(
               "Data recieved: ${Get.arguments}",
-              style: TextStyle(fontSize: 20),
+              style: const TextStyle(fontSize: 20),
             ),
           )
         ],
