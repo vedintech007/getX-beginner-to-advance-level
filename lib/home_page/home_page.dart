@@ -10,6 +10,7 @@ import 'package:mastering_getx/008-seperating-business-logic-from-ui/seperating_
 import 'package:mastering_getx/009-reactive-state-manager-using-getX-type-controller/reactive_state_manager_using_getX_type_controller.dart';
 import 'package:mastering_getx/010-simple-state-manager/simple_state_manager.dart';
 import 'package:mastering_getx/011-controller-life-cycle/controller_life_cycle.dart';
+import 'package:mastering_getx/012-unique-id/unique_id.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -56,6 +57,9 @@ class HomePage extends StatelessWidget {
 
                 // ControllerLifeCycle
                 ControllerLifeCycle(),
+
+                // unique id
+                UniqueId(),
               ],
             ),
           ),
