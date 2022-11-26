@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_state_manager/get_state_manager.dart';
 import 'package:mastering_getx/007-obx-and-custom-class/pages/student.dart';
 import 'package:mastering_getx/components/custom_button.dart';
 
