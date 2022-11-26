@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mastering_getx/012-unique-id/pages/unique_id_ui.dart';
+import 'package:mastering_getx/013-workers/workers-ui/workers_ui.dart';
 import 'package:mastering_getx/components/custom_button.dart';
 
-class UniqueId extends StatelessWidget {
-  const UniqueId({super.key});
+class Workers extends StatelessWidget {
+  const Workers({super.key});
 
   @override
   Widget build(BuildContext context) {
     return CustomButton(
-      btnText: "Unqiue Id",
+      btnText: "Workers",
       press: () {
-        Get.to(() => const UniqueIdUI());
+        Get.to(() => WorkersUi());
       },
     );
   }

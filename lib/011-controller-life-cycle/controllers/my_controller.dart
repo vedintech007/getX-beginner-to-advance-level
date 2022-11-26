@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:get/get.dart';
 
 class MyController extends GetxController {
@@ -22,13 +21,6 @@ class MyController extends GetxController {
   @override
   void onInit() {
     super.onInit();
-    print("Init called");
     increment();
-  }
-
-  @override
-  void onClose() {
-    super.onClose();
-    print("closed");
   }
 }

@@ -6,7 +6,6 @@ class UniqueIdController extends GetxController {
   void increment() async {
     for (int i = 0; i < 20; i++) {
       await Future.delayed(const Duration(seconds: 1));
-      print("Init done");
       count++;
       // we update values with respective ids
       update(['txtCount', 'text2Count']);

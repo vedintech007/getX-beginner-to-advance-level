@@ -11,6 +11,7 @@ import 'package:mastering_getx/009-reactive-state-manager-using-getX-type-contro
 import 'package:mastering_getx/010-simple-state-manager/simple_state_manager.dart';
 import 'package:mastering_getx/011-controller-life-cycle/controller_life_cycle.dart';
 import 'package:mastering_getx/012-unique-id/unique_id.dart';
+import 'package:mastering_getx/013-workers/workers.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -60,6 +61,9 @@ class HomePage extends StatelessWidget {
 
                 // unique id
                 UniqueId(),
+
+                // workers
+                Workers(),
               ],
             ),
           ),

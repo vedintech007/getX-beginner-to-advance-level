@@ -11,7 +11,7 @@ class SimpleStateManager extends StatelessWidget {
     return CustomButton(
       btnText: "Simple State Manager",
       press: () {
-        Get.to(() => SimpleStateManagerUi());
+        Get.to(() => const SimpleStateManagerUi());
       },
     );
   }
