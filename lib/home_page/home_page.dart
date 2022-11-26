@@ -5,6 +5,7 @@ import 'package:mastering_getx/003-bottom-sheet-dynamic-theme/buttom_sheet_dynam
 import 'package:mastering_getx/004-route-navigation/route_navigation.dart';
 import 'package:mastering_getx/005-named-route-navigation/named_route_navigation.dart';
 import 'package:mastering_getx/006-reactive-state-manager/reactive_state_manager.dart';
+import 'package:mastering_getx/007-obx-and-custom-class/obx_and_custom_class.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -33,6 +34,9 @@ class HomePage extends StatelessWidget {
 
             // reactive state management
             ReactiveStateManager(),
+
+            //
+            ObxCustomClass(),
           ],
         ),
       ),
