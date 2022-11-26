@@ -3,34 +3,34 @@ import 'package:get/get.dart';
 import 'package:mastering_getx/011-controller-life-cycle/controllers/my_controller.dart';
 import 'package:mastering_getx/components/custom_button.dart';
 
-class SimpleStateManagerUi extends StatelessWidget {
-  const SimpleStateManagerUi({super.key});
+class ControllerLifeCycleUi extends StatelessWidget {
+  ControllerLifeCycleUi({super.key});
+
+  MyController myController = Get.put(MyController());
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(),
+      appBar: AppBar(
+        title: const Text("Controller life cycle"),
+      ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           GetBuilder<MyController>(
+            // controlling what happed when controller is been initialize and disposed
+            // better approach in the my_controller file
+            // initState: (_) => myController.increment(),
+            // dispose: (_) => myController.cleanUpTask(),
             init: MyController(),
             builder: (controller) {
-              return Text(
-                "Count is ${controller.count}",
-                style: const TextStyle(
-                  fontSize: 30,
-                ),
-              );
+              return Text("The Value is ${controller.count}");
             },
           ),
-          const SizedBox(height: 50),
           CustomButton(
-            btnText: "Increse Count SSM",
-            press: () {
-              Get.find<MyController>().increment();
-            },
+            btnText: "Increase Count by 1",
+            press: () {},
           )
         ],
       ),

@@ -1,16 +1,9 @@
 # mastering_getx
 
-A new Flutter project.
+This repo contains as many tricks and usuage of the Getx library/framework I come across while using and learning GetX.
 
-## Getting Started
+## Note
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Don't take my naming conversions too seriously, go ahead and use better one in production code bases.
+- The are serveral ways to do state management with getX, explore and user which work best for you
+- This is my personal not officaial collection of the usage of getX, refer to the documentation for more clarification

@@ -1,3 +1,5 @@
+// ignore_for_file: must_be_immutable
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mastering_getx/009-reactive-state-manager-using-getX-type-controller/controller/my_controller.dart';

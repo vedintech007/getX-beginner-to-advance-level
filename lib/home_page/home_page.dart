@@ -9,6 +9,7 @@ import 'package:mastering_getx/007-obx-and-custom-class/obx_and_custom_class.dar
 import 'package:mastering_getx/008-seperating-business-logic-from-ui/seperating_business_logic_from_ui.dart';
 import 'package:mastering_getx/009-reactive-state-manager-using-getX-type-controller/reactive_state_manager_using_getX_type_controller.dart';
 import 'package:mastering_getx/010-simple-state-manager/simple_state_manager.dart';
+import 'package:mastering_getx/011-controller-life-cycle/controller_life_cycle.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -18,37 +19,46 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       // appBar: AppBar(),
       body: SafeArea(
-        child: Column(
-          children: const [
-            //  snackbar
-            CustomSnackBar(),
+        child: SingleChildScrollView(
+          child: Padding(
+            padding: const EdgeInsets.only(bottom: 30),
+            child: Column(
+              children: const [
+                //  snackbar
+                CustomSnackBar(),
 
-            //  dialog
-            CustomDialog(),
+                //  dialog
+                CustomDialog(),
 
-            // botttom sheet & dymnamic theme
-            BottomSheetDynamicTheme(),
+                // botttom sheet & dymnamic theme
+                BottomSheetDynamicTheme(),
 
-            // route navigation
-            RouteNavigation(),
+                // route navigation
+                RouteNavigation(),
 
-            // named route navigation
-            NameRoutesNavigation(),
+                // named route navigation
+                NameRoutesNavigation(),
 
-            // reactive state management
-            ReactiveStateManager(),
+                // reactive state management
+                ReactiveStateManager(),
 
-            // exploring Obs
-            ObxCustomClass(),
+                // exploring Obs
+                ObxCustomClass(),
 
-            // seperating business logic from ui code
-            BusinessLogicFromUi(),
+                // seperating business logic from ui code
+                BusinessLogicFromUi(),
 
-            // reactive state management with getX type controller
-            ReactiveStateManagerWithTypeController(),
+                // reactive state management with getX type controller
+                ReactiveStateManagerWithTypeController(),
 
-            SimpleStateManager(),
-          ],
+                // simple state management with Getbuilder
+                SimpleStateManager(),
+
+                // ControllerLifeCycle
+                ControllerLifeCycle(),
+              ],
+            ),
+          ),
         ),
       ),
     );
