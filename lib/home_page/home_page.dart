@@ -8,6 +8,7 @@ import 'package:mastering_getx/006-reactive-state-manager/reactive_state_manager
 import 'package:mastering_getx/007-obx-and-custom-class/obx_and_custom_class.dart';
 import 'package:mastering_getx/008-seperating-business-logic-from-ui/seperating_business_logic_from_ui.dart';
 import 'package:mastering_getx/009-reactive-state-manager-using-getX-type-controller/reactive_state_manager_using_getX_type_controller.dart';
+import 'package:mastering_getx/010-simple-state-manager/simple_state_manager.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -45,6 +46,8 @@ class HomePage extends StatelessWidget {
 
             // reactive state management with getX type controller
             ReactiveStateManagerWithTypeController(),
+
+            SimpleStateManager(),
           ],
         ),
       ),
