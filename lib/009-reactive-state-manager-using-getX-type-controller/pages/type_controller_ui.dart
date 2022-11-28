@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mastering_getx/009-reactive-state-manager-using-getX-type-controller/controller/my_controller.dart';
-import 'package:mastering_getx/components/custom_button.dart';
+import 'package:mastering_getx/00-components/custom_button.dart';
 
 class TypeControllerUi extends StatelessWidget {
   TypeControllerUi({super.key});

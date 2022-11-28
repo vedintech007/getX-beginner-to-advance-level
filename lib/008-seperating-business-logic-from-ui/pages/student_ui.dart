@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mastering_getx/008-seperating-business-logic-from-ui/controller/student_controller.dart';
-import 'package:mastering_getx/components/custom_button.dart';
+import 'package:mastering_getx/00-components/custom_button.dart';
 
 class StudentUiPage extends StatelessWidget {
   StudentUiPage({super.key});

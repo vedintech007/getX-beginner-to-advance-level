@@ -2,7 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mastering_getx/004-route-navigation/pages/page2.dart';
-import 'package:mastering_getx/components/custom_button.dart';
+import 'package:mastering_getx/00-components/custom_button.dart';
 
 class Page1 extends StatelessWidget {
   const Page1({super.key});

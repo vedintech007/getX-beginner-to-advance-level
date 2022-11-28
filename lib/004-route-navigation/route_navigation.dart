@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mastering_getx/004-route-navigation/pages/page1.dart';
-import 'package:mastering_getx/components/custom_button.dart';
+import 'package:mastering_getx/00-components/custom_button.dart';
 
 class RouteNavigation extends StatelessWidget {
   const RouteNavigation({super.key});

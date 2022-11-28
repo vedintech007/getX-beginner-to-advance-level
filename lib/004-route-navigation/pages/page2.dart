@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mastering_getx/components/custom_button.dart';
+import 'package:mastering_getx/00-components/custom_button.dart';
 
 class Page2 extends StatelessWidget {
   const Page2({super.key});

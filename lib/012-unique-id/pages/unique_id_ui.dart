@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mastering_getx/012-unique-id/controller/unique_id_controller.dart';
-import 'package:mastering_getx/components/custom_button.dart';
+import 'package:mastering_getx/00-components/custom_button.dart';
 
 class UniqueIdUI extends StatelessWidget {
   const UniqueIdUI({super.key});

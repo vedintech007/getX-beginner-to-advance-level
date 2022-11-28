@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:mastering_getx/011-controller-life-cycle/controllers/my_controller.dart';
-import 'package:mastering_getx/components/custom_button.dart';
+import 'package:mastering_getx/00-components/custom_button.dart';
 
 class SimpleStateManagerUi extends StatelessWidget {
   const SimpleStateManagerUi({super.key});
