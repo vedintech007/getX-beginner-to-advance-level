@@ -13,6 +13,7 @@ import 'package:mastering_getx/011-controller-life-cycle/controller_life_cycle.d
 import 'package:mastering_getx/012-unique-id/unique_id.dart';
 import 'package:mastering_getx/013-workers/workers.dart';
 import 'package:mastering_getx/014%20-%20internationalization/internationalization.dart';
+import 'package:mastering_getx/015-%20dependency-injection/dependency_injection.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -27,6 +28,9 @@ class HomePage extends StatelessWidget {
             padding: const EdgeInsets.only(bottom: 30),
             child: Column(
               children: const [
+                // dependency injection
+                DependencyInjection(),
+
                 // Internationalization
                 Internationalization(),
 
