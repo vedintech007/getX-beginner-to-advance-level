@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:mastering_getx/005-named-route-navigation/pages/named_route_page1.dart';
 import 'package:mastering_getx/005-named-route-navigation/pages/named_route_page2.dart';
 import 'package:mastering_getx/005-named-route-navigation/pages/unknown_route_page.dart';
+import 'package:mastering_getx/014%20-%20internationalization/components/messages.dart';
 import 'package:mastering_getx/home_page/home_page.dart';
 
 void main() {
@@ -21,6 +22,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.lightBlue,
       ),
+      translations: Messages(),
+      locale: const Locale("en", "US"),
+      fallbackLocale: const Locale("en", "US"),
 
       // path configs when setting named route with getX
       initialRoute: "/",
